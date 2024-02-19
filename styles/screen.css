@@ -4,6 +4,7 @@
     --main-bg-color: #E9E9E9;
     --primary-text-color: #424242;
     --accent-color: #FF3F3C;
+    --regular-text-size: 1.5em;
 }
 
 body {
@@ -15,7 +16,7 @@ body {
 }
 
 header {
-    padding: 20px;
+    padding: 40px;
     margin-bottom: 100px;
 }
 
@@ -47,10 +48,23 @@ h3 {
     font-size: 3em;
 }
 
+section {
+    padding: 0 100px;
+}
+
+p {
+    font-size: var(--regular-text-size);
+}
+
+.details ul {
+    padding-inline-start: 0;
+}
+
 .details ul li {
     list-style-type: none;
     margin: 10px 0;
     padding: 5px 0 5px 40px;
+    font-size: var(--regular-text-size);
 }
 
 .details ul li.wifi {
@@ -67,4 +81,45 @@ h3 {
 
 .details ul li.photos {
     background: url('/images/photo-film-solid.svg') no-repeat center left;
+}
+
+.CTA h3 {
+    margin: 1.5em 0 0.5em 0;
+}
+
+.form {
+    margin: 0 auto 40px auto;
+    padding: 30px;
+    background-image: linear-gradient(#E2E2E2, #D6D7D6);
+    border-radius: 30px;
+}
+
+form {
+    width: 100%;
+    display: flex;
+    align-items: stretch;
+}
+
+input {
+    height: 60px;
+    margin: 0 5px;
+}
+
+input[type="text"] {
+    flex: 7;
+    border-width: 0;
+    padding: 0 0 0 20px;
+    background-color: #ECECEC;
+    color: var(--primary-text-color);
+    font-size: 1em;
+}
+
+input[type="button"] {
+    flex: 2;
+    background-color: var(--accent-color);
+    color: #FFFFFF;
+    font-weight: 900;
+    text-transform: uppercase;
+    border-width: 0;
+    font-size: 1em;
 }
